@@ -11,11 +11,11 @@ imdbController.controller('ListController', ['$scope', '$http', function($scope,
 		if($('#query-input').val().length > 0){
 			$('#navbar').css("height", "170px");
 			$('#search-container').removeClass('center');
-			$('#search-container').removeClass('full-width');
 			$('#search-container').removeClass('full-height');
 		}
 		else{
 			$('#navbar').css("height", "100%");
+			$('#search-container').addClass('full-height');
 			$('#search-container').addClass('center');
 		}
 	});
