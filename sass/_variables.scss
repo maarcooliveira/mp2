@@ -1,7 +1,21 @@
-$orange         : #BD3613;
-$blue           : #2176C7;
+// _base variables
+$color-text-light   : #FCFCFC;
+$color-text-dark	: #404040;
+$color-primary      : #242F69;
+$color-analogous	: #3F78B5; 
+$color-triadic-1	: #B53F51;
+$color-triadic-2	: #51B53F;
+$navbar-url			: #C5CAE9;
+$light-background	: #f3f3f3;
+$dark-background	: #404040;
 
-$font-primary: Merriweather, serif;
-$font-secondary: Bree Serif, serif;
-
+$font-sans: Open Sans, sans-serif;
 $default-border-radius : 10px;
+
+// _imdb variables
+$navbar-height-top-area: 64px;
+$navbar-height-title-area: 100px;
+$navbar-height-details-page: 164px;
+
+$color-imdb-navbar: #DE4545;
+$navbar-imdb-url: #F2B6B6;

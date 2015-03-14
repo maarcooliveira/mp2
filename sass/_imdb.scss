@@ -1,0 +1,84 @@
+body {
+	background-color: $color-text-light;
+	@include background-size(cover);
+}
+
+.blur {
+	-webkit-filter: blur(5px);
+}
+
+.main-view {
+	padding-top: $navbar-height-details-page;
+}
+
+.details-height {
+	min-height: calc(100vh - 164px);
+}
+
+.selected {
+	border-bottom: 2px solid $navbar-imdb-url;
+	color: $color-text-light;
+}
+
+.movie-list-item {
+	@include box-shadow(0, 2px, 4px, 2px, rgba(0,0,0,0.12));
+	img {
+		margin-left: -18px;
+	}
+}
+
+.movie-gallery-item {
+	@include box-shadow(0, 2px, 4px, 2px, rgba(0,0,0,0.12));
+}
+
+.clear {
+	clear: both;
+}
+
+#navbar {
+	background-color: $color-imdb-navbar;
+	color: $color-text-light;
+	width: 100%;
+	height: $navbar-height-details-page;
+	position: fixed;
+	z-index: 999;
+	@include box-shadow(0, 2px, 4px, 2px, rgba(0,0,0,0.12));
+	@include transition(all, 0.3s);
+	
+	h2 {
+		float: left;
+		padding-left: 20px;
+		color: $color-text-light;
+		line-height: $navbar-height-top-area;
+	}
+
+	nav {
+		float: right;
+
+		a {
+			margin-right: 20px;
+			line-height: $navbar-height-top-area;
+		}
+	}
+
+	a {
+		color: $navbar-imdb-url;
+		text-transform: uppercase;
+		@include transition(all, 0.3s);
+	}
+
+	a:hover {
+		cursor: pointer;
+		color: $color-text-light;
+	}
+}
+
+#title {
+	color: $color-text-light;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+#categories {
+	line-height: $navbar-height-top-area;
+}

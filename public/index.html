@@ -1,60 +1,253 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MP2 Starter</title>
-  <script src="./lib/angular/angular.min.js"></script>
-  <script src="./js/controllers.js"></script>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./foundation/css/foundation.css">
-  
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Marco Andre De Oliveira</title>
+	<script src="./lib/angular/angular.min.js"></script>
+	<script src="./js/controllers.js"></script>
+	<link rel="icon" href="./data/banners/icon.png">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./foundation/css/foundation.css">
+	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
-
 
 <body>
 
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
+	<div class="fixed">
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+			<li class="name show-for-large-up">
+				<h1><a href="#">Marco Andre De Oliveira</a></h1>
+			</li>
+			<li class="name show-for-medium">
+				<img class="nav-icon" src="./data/banners/icon.png">
+			</li>
+			<li class="name show-for-small">
+				<img class="nav-icon" src="./data/banners/icon.png">
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+			</ul>
 
-	  <section class="top-bar-section">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-	    </ul>
-	  </section>
-	</nav>
-
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
-	
-		<h3>Hello, {{name}}</h3>
-
-		</div>
+			<section class="top-bar-section">
+			<ul class="right">
+				<li><a href="#intro" class="upper inner-nav">Intro</a></li>
+				<li><a href="#education" class="upper inner-nav">Edu</a></li>
+				<li><a href="#projects" class="upper inner-nav">Projects</a></li>
+				<li><a href="#about" class="upper inner-nav">+me</a></li>
+				<li><a href="#contact" class="upper inner-nav">Contact</a></li>
+			</ul>
+			</section>
+		</nav>
 	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
+	<main>
+
+		<section id="intro" class="full-width full-height center">
+			<div class="row">
+				<div class="columns small-12 large-12 text-center">
+					<img id="profile-picture" class="circular-image" src="./data/banners/profile.jpg">
+					<h2>Hi, I'm Marco!</h2>
+					<br>
+					<p>Here you can explore my adventures in the Computer Science world <br>and also get to know more about me.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="education" class="full-width full-height">
+			<div class="row">
+				<h1 class="text-center upper">Education</h1>
+				<p class="text-center">This is my academic life</p>
+				
+				<div class="columns small-12 medium-6 text-center">
+					<img class="edu-image" src="./data/banners/uiuc-logo.png">
+					<h3>University of Illinois at Urbana-Champaign</h3><br>
+					<p class="text-justify">Hail to the orange, hail to the blue! Studying here since Fall 2014 with a scholarship from the Brazilian government, it has been an amazing time to take different courses and have great life experiences.</p>
+				</div>
+
+				<div class="columns small-12 medium-6 text-center">
+					<img class="edu-image" src="./data/banners/ufscar-logo.png">
+					<h3>Universidade Federal de Sao Carlos <br>(UFSCar)</h3><br>
+					<p class="text-justify">Where it all started. I'm currently a Junior in my CS major at UFSCar, one of the best public universities in Brazil, and I'll be back there to finish my degree once my time at Illinois is over.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="full-width full-height">
+			<div class="row">
+				<h1 class="text-center upper">Projects</h1>
+				<p class="text-center">This is what I've been doing</p>
+				<div class="columns small-12 medium-6 large-4">
+					<img data-reveal-id="greenmap" class="modal-banner" src="./data/banners/urbana-project.png" alt="Urbana Green Map project banner">
+				</div>
+				<div class="columns small-12 medium-6 large-4">
+					<img data-reveal-id="heatmapp" class="modal-banner" src="./data/banners/heatmapp-project.png" alt="UIUC HeatMapp project banner">
+				</div>
+				<div class="columns small-12 medium-6 large-4">
+					<img data-reveal-id="research" class="modal-banner" src="./data/banners/undergrad-project.png" alt="Undergrad Research project banner">
+				</div>
+				<br>
+				<div class="columns small-12 medium-6 large-4">
+					<img data-reveal-id="wnt" class="modal-banner" src="./data/banners/tracker-project.png" alt="Watch and Track project banner">
+				</div>
+				<div class="columns small-12 medium-6 large-4">
+					<img data-reveal-id="weather" class="modal-banner" src="./data/banners/weather-project.png" alt="Weather App project banner">
+				</div>
+				<div class="columns small-12 medium-6 large-4">
+					<img data-reveal-id="web" class="modal-banner" src="./data/banners/website-project.png" alt="Web Programming project banner">
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="full-width full-height">
+			<h1 class="text-center upper">More about me</h1>
+			<p class="text-center">Some facts that you may like to know</p>
+			<br>
+			<ul id="carousel" class="example-orbit" data-orbit>
+			  <li>
+			    <img src="./data/banners/obmep-banner.png" alt="OBMEP banner" />
+			  </li>
+			  <li>
+			    <img src="./data/banners/ui-banner.png" alt="User Interface banner" />
+			  </li>
+			  <li>
+			    <img src="./data/banners/third-banner.png" alt="Web Programming banner" />
+			  </li>
+			</ul>
+		</section>
+		
+		<section id="contact" class="full-width full-height">
+			<div class="row">
+				<h1 class="text-center upper">Contact</h1>
+				<p class="text-center">I am almost everywhere. Seriously.</p>
+				<br><br>
+				<a class="columns small-12 medium-6 large-4 text-center" href="http://fb.me/maarcooliveira" target="_blank"><i class="fa fa-facebook-official fa-2x"></i> maarcooliveira</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="http://twitter.com/maarcooliveira" target="_blank"><i class="fa fa-twitter fa-2x"></i> maarcooliveira</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="https://plus.google.com/+MarcoOliveiraM" target="_blank"><i class="fa fa-google-plus fa-2x"></i> marcooliveiram</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="https://github.com/maarcooliveira" target="_blank"><i class="fa fa-github fa-2x"></i> maarcooliveira</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="https://www.linkedin.com/in/maarcooliveira/en" target="_blank"><i class="fa fa-linkedin fa-2x"></i> maarcooliveira</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="mailto:mdeoliv2@illinois.edu" target="_blank"><i class="fa fa-envelope fa-2x"></i> mdeoliv2@uiuc</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="https://medium.com/@maarcooliveira" target="_blank"><i class="fa fa-medium fa-2x"></i> maarcooliveira</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="http://www.lastfm.com/user/marco_andre2" target="_blank"><i class="fa fa-lastfm fa-2x"></i> marco_andre2</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="http://instagram.com/maarcooliveira" target="_blank"><i class="fa fa-instagram fa-2x"></i> maarcooliveira</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="https://bitbucket.org/maarcooliveira" target="_blank"><i class="fa fa-bitbucket fa-2x"></i> maarcooliveira</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="https://open.spotify.com/user/maarcooliveira" target="_blank"><i class="fa fa-spotify fa-2x"></i> maarcooliveira</a>
+				<a class="columns small-12 medium-6 large-4 text-center" href="skype:maarcooliveira?chat" target="_blank"><i class="fa fa-skype fa-2x"></i> maarcooliveira</a>
+			</div>
+		</section>
+
+		
+		<section id="video" class="flex-video widescreen show-for-medium-up">
+			<video autoplay loop>
+				<source src="https://dl.dropbox.com/s/kgyq64t0hk05svs/video.mp4" type="video/mp4">
+			</video>
+		</section>		
+
+
+		<footer class="text-center">
+			<i class="fa fa-code fa-lg"></i> by myself with some Foundation magic. Cool, right?
+		</footer>
+
+
+		<div id="greenmap" class="reveal-modal" data-reveal>
+			<h2>Urbana Green Map</h2><br>
+			<p>In a Learning in Community class at UIUC, in partnership with the city of Urbana, IL, we developed a Green Map (map containing all the environmentally friendly infrastructure available in the city) and also a mobile application to help the students in the address gathering process.</p>
+			<br>
+			<h4>What I worked with</h4>
+			<ul>
+				<li>HTML/CSS</li>
+				<li>Web Starter Kit</li>
+				<li>Google Maps JavaScript API</li>
+				<li>Android development</li>
+				<li>Google Maps Android API</li>
+			</ul>
+			<p><a href="https://guarded-castle-6498.herokuapp.com/index.html" target="_blank" class="button right">Green Urbana</a></p>
+			<a class="close-reveal-modal">&#215;</a>
 		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-	</div>
+
+		<div id="heatmapp" class="reveal-modal" data-reveal>
+			<h2>HeatMapp</h2><br>
+			<p>Android application developed as a final project for my User Interface Design class at UIUC, in a group with three more students. Since the interface was the most important for the project, the backend of the app was not developed. The idea of this app is to gather the user's location and show it anonymously in a map, so other users can have an idea about how crowded a place is. It is also supposed show pictures taken in the most crowded places around the campus.</p>
+			<br>
+			<h4>What I worked with</h4>
+			<ul>
+				<li>Android development</li>
+				<li>UI and UX prototyping</li>
+			</ul>
+			<p><a href="https://github.com/maarcooliveira/HeatMapp" target="_blank" class="button right"><i class="fa fa-github fa-lg"></i> HeatMapp</a></p>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+		<div id="research" class="reveal-modal" data-reveal>
+			<h2>Undergrad Research</h2><br>
+			<p>Undergraduate Research that I participated while sudent at UFSCar. I was part of the Smart Cities and Internet of Things research group and developed a Database, Android NFC app and a Webservice connecting them, proposing a system to replace the current university control of entrance in the Dining Hall. This project was funded by the National Counsel of Technological and Scientific Development and last about a year and a half.</p>
+			<br>
+			<h4>What I worked with</h4>
+			<ul>
+				<li>Android development</li>
+				<li>Android NFC library</li>
+				<li>ksoap2-android library</li>
+				<li>SOAP webservice</li>
+				<li>JavaDB database</li>
+			</ul>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+		<div id="wnt" class="reveal-modal" data-reveal>
+			<h2>Watch and Track</h2><br>
+			<p>Google Chrome extension developed as my final project for the Programming Studio class. It is an automatic tracker that identifies what a user is watching on Netflix and automatically checkin the movie or show in Trakt.tv. At this time, the Trakt.tv API has changed, and the extension still using the old API calls. It may be fixed as soon as I get some free time.</p>
+			<br>
+			<h4>What I worked with</h4>
+			<ul>
+				<li>Chrome extension development</li>
+				<li>JavaScript</li>
+				<li>HTML/CSS</li>
+			</ul>
+			<p><a href="https://github.com/maarcooliveira/watch-n-track" target="_blank" class="button right"><i class="fa fa-github fa-lg"></i> Watch and Track</a></p>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+		<div id="weather" class="reveal-modal" data-reveal>
+			<h2>Weather App</h2><br>
+			<p>An Android Weather application that I developed for an internship position as Android developer. It is just a basic application and weather for just one location can be seen at a time. The purpose of this app was to follow the main guidelines of Google's Material Design. The OpenWeatherMap.org's API was used in this project.</p>
+			<br>
+			<h4>What I worked with</h4>
+			<ul>
+				<li>Android development</li>
+				<li>Some Material Design guidelines</li>
+				<li>OpenWeatherMap API</li>
+				<li>JSON parsing</li>
+			</ul>
+			<p><a href="https://github.com/maarcooliveira/Weather" target="_blank" class="button right"><i class="fa fa-github fa-lg"></i> Weather App</a></p>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+		<div id="web" class="reveal-modal" data-reveal>
+			<h2>This page</h2><br>
+			<p>Yes! This webpage (to rule them all) started as an MP for my Web Programming class at UIUC. Since I never had time to do something that I really liked as my personal page, this was my chance! Just basic jQuery, SASS and some hard work created this page that you are visiting now. Hope you liked it!</p>
+			<br>
+			<h4>What I worked with</h4>
+			<ul>
+				<li>HTML</li>
+				<li>CSS/SASS</li>
+				<li>JavaScript/jQuery</li>
+				<li>Some UI knowledge from my past semester</li>
+			</ul>
+			<p><a href="http://104.131.186.103:3000/" target="_blank" class="button right"> Previous version live</a></p><span class="right">&nbsp&nbsp</span>
+			<p><a href="https://github.com/maarcooliveira/mp2" target="_blank" class="button right"><i class="fa fa-github fa-lg"></i> This version's code</a></p>
+
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+
+	</main>
  
 
 
-  <script src="./js/script.js"></script>
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./foundation/js/foundation.min.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
+	<script src="./lib/jquery-2.1.3.min/index.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./foundation/js/foundation.min.js"></script>
+	<script src="./foundation/js/foundation/foundation.topbar.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

@@ -97,7 +97,7 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
+$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -124,11 +124,20 @@ $include-html-global-classes: $include-html-classes;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+$color-text-light   : #FCFCFC;
+$color-text-dark	: #404040;
+$color-primary      : #242F69;
+$color-analogous	: #3F78B5; 
+$color-triadic-1	: #B53F51;
+$color-triadic-2	: #51B53F;
+$navbar-url			: #C5CAE9;
+$light-background	: #f3f3f3;
+$dark-background	: #404040;
 
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-font-family: Open Sans;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -383,7 +392,7 @@ $include-html-global-classes: $include-html-classes;
 // $block-grid-elements: 12;
 // $block-grid-default-spacing: rem-calc(20);
 
-// $align-block-grid-to-grid: false;
+// $align-block-grid-to-grid: true;
 // @if $align-block-grid-to-grid {$block-grid-default-spacing: $column-gutter;}
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
@@ -908,7 +917,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control the timer styles
 // $orbit-timer-bg: rgba(255,255,255,0.3);
-// $orbit-timer-show-progress-bar: true;
+$orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: $iron;
@@ -925,8 +934,8 @@ $include-html-global-classes: $include-html-classes;
 // $preloader-class: "preloader";
 
 // Hide controls on small
-// $orbit-nav-hide-for-small: true;
-// $orbit-bullet-hide-for-small: true;
+$orbit-nav-hide-for-small: false;
+$orbit-bullet-hide-for-small: false;
 // $orbit-timer-hide-for-small: true; 
 
 // 20. Pagination
@@ -1381,30 +1390,32 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $color-primary;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
+$navbar-height-full: 120px;
+$navbar-height-small: 64px;
+$topbar-height: rem-calc($navbar-height-small);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(25);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
-// $topbar-link-color-hover: $white;
-// $topbar-link-color-active: $white;
+$topbar-link-color: $navbar-url;
+$topbar-link-color-hover: $white;
+$topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: $oil;
-// $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-hover: $topbar-bg;
+$topbar-link-bg-color-hover: $topbar-bg;
+$topbar-link-bg-active: $topbar-bg;
+$topbar-link-bg-active-hover: $topbar-bg;
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);

@@ -1,0 +1,29 @@
+<div id="navbar">
+	<h2>IMDB Top 250</h2>
+	<nav>
+		<a href="#/list">Search</a>
+		<a href="#/gallery">Gallery</a>
+	</nav>
+	<br>
+	<section>
+		<h1 class="columns small-12" id="title"><a href="#/details/{{prev}}" class="columns small-1"><i class="fa fa-chevron-left"></i></a> {{imdb[id].title}} <a href="#/details/{{next}}" class="columns small-1"><i class="fa fa-chevron-right"></i></a></h1>
+	</section>
+</div>
+
+<main class="main-view">
+	<div class="details-height center">
+		<div class="row">
+			<img ng-src="./data/images/{{imdb[id].imdbID}}.jpg" alt="Poster of movie {{imdb[id].title}}" class="columns small-3">
+			
+			<div class="columns small-9">
+				<h5>{{imdb[id].plot}}</h5>
+				<br>
+				<p><i class="fa fa-list-ol"></i> {{imdb[id].rank}}</p>
+				<p><i class="fa fa-calendar-o"></i> {{imdb[id].released}}</p>
+				<p><i class="fa fa-clock-o"></i> {{imdb[id].runtime}}</p>
+				<p><i class="fa fa-trophy"></i> {{imdb[id].awards}}</p>
+				<p><i class="fa fa-star"></i> {{imdb[id].imdbRating}}</p>
+			</div>
+		</div>
+	</div>
+</main>

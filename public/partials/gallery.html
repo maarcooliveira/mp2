@@ -1,0 +1,35 @@
+<div id="navbar">
+	<h2>IMDB Top 250</h2>
+	<nav>
+		<a href="#/list">Search</a>
+		<a href="#/gallery" class="selected">Gallery</a>
+	</nav>
+	<br><br>
+	<div id="categories" class="clear">
+		<a href="" class="columns small-1 text-center selected" ng-click="query.genre = ''">All</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'action'">Action</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'adventure'">Adventure</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'crime'">Crime</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'comedy'">Comedy</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'drama'">Drama</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'musical'">Musical</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'mystery'">Mystery</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'romance'">Romance</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'sci-fi'">Sci-fi</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'thriller'">Thriller</a>
+		<a href="" class="columns small-1 text-center" ng-click="query.genre = 'western'">Western</a>
+	</div>
+</div>
+
+<main class="main-view">
+	<br><br>
+	<section class="row" ng-model="imdb" data-onload="onGalleryLoad">
+		<ul class="small-block-grid-3 medium-block-grid-5 large-block-grid-7">
+			<li ng-repeat="movie in imdb | filter: query">
+				<a id="{{movie.imdbID}}" href="#/details/{{movie.rank}}">
+					<img class="poster movie-gallery-item" ng-src="./data/images/{{movie.imdbID}}.jpg" alt="Poster of movie {{movie.title}}">
+				</a>
+			</li>
+		</ul>
+	</section>
+</main>

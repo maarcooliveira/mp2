@@ -1,0 +1,39 @@
+<div id="navbar">
+	<h2>IMDB Top 250</h2>
+	<nav>
+		<a href="#/list" class="selected">Search</a>
+		<a href="#/gallery">Gallery</a>
+	</nav>
+	<div id="search-container" class="full-width full-height center">
+		<section class="row">
+			<span class="columns small-12"><input id="query-input" type="text" ng-model="query" placeholder="Search" autofocus>
+				<select ng-model="sort" class="columns small-8">
+				<option value="title">Title</option>
+				<option value="rank">Rank position</option>
+			</select>
+			<div class="right cloumns">
+				<input type="radio" ng-model="sortOrder" name="sortOrder" checked> Ascending &nbsp
+				<input type="radio" ng-model="sortOrder" name="sortOrder" value="reverse"> Descending
+			</div>
+			</span>
+		</section>
+	</div>
+</div>
+
+<main class="main-view">
+	<br><br>
+	<ul ng-show="query">
+		<li ng-repeat="movie in imdb | filter: query | orderBy: sort:sortOrder">
+			<a href="#/details/{{movie.rank}}">
+				<div class="row movie-list-item">
+					<img ng-src="./data/images/{{movie.imdbID}}.jpg" alt="Poster of movie {{movie.title}}" class="columns small-2">
+					<div class="columns small-10">
+						<h2>{{movie.title}}</h2>
+						<p><i class="fa fa-list-ol"></i> {{movie.rank}}</p>
+					</div>
+				</div>
+			</a>
+			<br>
+		</li>
+	</ul>
+</main>
